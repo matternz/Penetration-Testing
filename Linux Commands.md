@@ -5,6 +5,30 @@
 
 ### Basic Shell Commands
 
+**clear**
+***clears console***
+```
+clear - clear the terminal screen
+```
+
+**mount**
+***displays mounted media and file systems***
+```
+mount - mount a filesystem
+```
+
+**uptime**
+***displays how long system has being active***
+```
+uptime - tell how long the system has been running
+```
+
+**su root**
+******
+```
+su - change user ID or become superuser
+```
+
 **ls -lah**
 ***ls all files in long format including hidden in a human readable format***
 ```
@@ -19,12 +43,31 @@ ls - list directory contents
 
 **pwd**
 ```
-prints name of current/working directory
+pwd - prints name of current/working directory
 ```
 
 **cd**
+***moves directory e.g. cd desktop, cd ..***
 ```
-change the current working directory
+cd - change the current working directory
+```
+
+**pwd**
+***prints current location in file system***
+```
+pwd - print name of current/working directory
+```
+
+**whoami**
+***displays the current activate user***
+```
+whoami - print effective userid
+```
+
+**date**
+***prints out the time and date of the system***
+```
+date - print or set the system date and time
 ```
 
 **ps aux**
@@ -45,4 +88,24 @@ x - Lift the BSD-style "must have a tty" restriction, which is imposed upon the 
     set of processes selected by other means. An alternate description is that this option
     causes ps to list all processes owned by you (same EUID as ps), or to list all processes
     when used together with the a option.
+```
+
+**kill**
+***Kills a processe based on number given e.g. kill 4***
+```
+kill - send a signal to a process
+```
+
+## Network Interface and IP Commands
+
+**ifconfig**
+***display interface information, mac addresses, IPv4, IPv6, interface status, transmitted and received date etc.***
+```
+ifconfig - configure a network interface
+```
+
+**route**
+***displays current routing table, including default route***
+```
+route - show / manipulate the IP routing table
 ```
