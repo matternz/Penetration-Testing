@@ -2,19 +2,16 @@
 #### Commands that I think is important to know, explanation of them taken from explainshell.com
 #### Other resources used:
 - https://www.hackingloops.com/command-cheat-sheet-for-linux/
+- https://ryanstutorials.net/linuxtutorial/cheatsheetgrep.php
 
 ### Basic Shell Commands
+
+#### Terminal
 
 **clear**
 ***clears console***
 ```
 clear - clear the terminal screen
-```
-
-**mount**
-***displays mounted media and file systems***
-```
-mount - mount a filesystem
 ```
 
 **uptime**
@@ -23,39 +20,10 @@ mount - mount a filesystem
 uptime - tell how long the system has been running
 ```
 
-**su root**
-******
+**date**
+***prints out the time and date of the system***
 ```
-su - change user ID or become superuser
-```
-
-**ls -lah**
-***ls all files in long format including hidden in a human readable format***
-```
-ls - list directory contents
-
--l list directory contents using a long listing format 
-
--a do not ignore entries starting with .with -l, 
-
--h print sizes in human readable format (e.g., 1K 234M 2G)
-```
-
-**pwd**
-```
-pwd - prints name of current/working directory
-```
-
-**cd**
-***moves directory e.g. cd desktop, cd ..***
-```
-cd - change the current working directory
-```
-
-**pwd**
-***prints current location in file system***
-```
-pwd - print name of current/working directory
+date - print or set the system date and time
 ```
 
 **whoami**
@@ -64,14 +32,8 @@ pwd - print name of current/working directory
 whoami - print effective userid
 ```
 
-**date**
-***prints out the time and date of the system***
-```
-date - print or set the system date and time
-```
-
 **ps aux**
-***Displays list of running processes***
+***displays list of running processes***
 ```
 ps - reports a snapshot of the current processes
 
@@ -91,12 +53,79 @@ x - Lift the BSD-style "must have a tty" restriction, which is imposed upon the 
 ```
 
 **kill**
-***Kills a processe based on number given e.g. kill 4***
+***kills a processe based on number given e.g. kill 4***
 ```
 kill - send a signal to a process
 ```
+<!-- TODO -->
+**jobs**
 
-## Network Interface and IP Commands
+#### Basic Navigation
+
+**ls -lah**
+***ls all files in long format including hidden in a human readable format***
+```
+ls - list directory contents
+
+-l list directory contents using a long listing format 
+
+-a do not ignore entries starting with .with -l, 
+
+-h print sizes in human readable format (e.g., 1K 234M 2G)
+```
+
+**cd**
+***moves directory e.g. cd desktop, cd ..***
+```
+cd - change the current working directory
+```
+**pwd**
+***prints current location in file system***
+```
+pwd - print name of current/working directory
+```
+<!-- TODO -->
+**find**
+
+#### Files
+
+**mount**
+***displays mounted media and file systems***
+```
+mount - mount a filesystem
+```
+<!-- TODO -->
+**touch**
+
+#### Folders
+
+**mkdir**
+***creates a directory***
+```
+mkdir - make directories
+```
+
+**rmdir**
+***removes empty directory***
+```
+rmdir - remove empty directories
+```
+<!-- TODO -->
+**mv**
+<!-- TODO -->
+**rm**
+
+#### Permissions
+
+**su root**
+***changes user id to root***
+```
+su - change user ID or become superuser
+```
+<!-- TODO -->
+**chmod**
+
+### Network Interface and IP Commands
 
 **ifconfig**
 ***display interface information, mac addresses, IPv4, IPv6, interface status, transmitted and received date etc.***
@@ -155,3 +184,8 @@ netstat - Print network connections, routing tables, interface statistics, masqu
 
 -t
 ```
+<!-- TODO -->
+## Grep
+
+Grep is used to find a string in a given file.
+
