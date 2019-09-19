@@ -104,8 +104,54 @@ kill - send a signal to a process
 ifconfig - configure a network interface
 ```
 
+**ifconfig [interface] up**
+***enables an interface that has being shut downe.g. ifconfig eth0 down***
+```
+ifconfig - configure a network interface
+```
+
+**ifconfig [interface] down**
+***shuts down an interface e.g. ifconfig eth0 down***
+```
+ifconfig - configure a network interface
+```
+
 **route**
 ***displays current routing table, including default route***
 ```
 route - show / manipulate the IP routing table
+```
+
+## Port and Service Commands:
+
+**netstat -l**
+***shows ports that are in a listening state***
+```
+netstat - Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+
+-l Show only listening sockets.
+```
+
+**netstat -a**
+***shows all ports/(sometimes called sockets) that are being used***
+```
+netstat - Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+
+-a Show  both  listening  and non-listening sockets.  With the --interfaces option, show interfaces that are not up
+```
+
+**netstat u**
+***Displays all udp connections***
+```
+netstat - Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+
+-u
+```
+
+**netstat -t**
+***displays all tcp connections***
+```
+netstat - Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+
+-t
 ```
